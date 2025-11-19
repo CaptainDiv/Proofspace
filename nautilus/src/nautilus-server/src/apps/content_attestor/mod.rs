@@ -43,6 +43,12 @@ pub async fn process_data(
     )))
 }
 
+pub async fn handler() -> Json<serde_json::Value> {
+    Json(json!({
+        "status": "ok",
+        "message": "content_attestor enclave is running"
+    }))
+}
 
 #[cfg(test)]
 mod tests {

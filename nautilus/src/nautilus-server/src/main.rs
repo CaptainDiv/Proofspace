@@ -1,5 +1,3 @@
-// Copyright (c), Mysten Labs, Inc.
-// SPDX-License-Identifier: Apache-2.0
 
 use anyhow::Result;
 use axum::{routing::get, routing::post, Router};
@@ -10,6 +8,12 @@ use nautilus_server::AppState;
 use std::sync::Arc;
 use tower_http::cors::{Any, CorsLayer};
 use tracing::info;
+use apps::content_attestor;
+
+mod apps {
+    pub mod content_attestor;
+}
+
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -43,6 +47,7 @@ async fn main() -> Result<()> {
         .route("/process_data", post(process_data))
         .route("/health_check", get(health_check))
         .with_state(state)
+        .route("/content_attestor", get(apps::content_attestor::handler))
         .layer(cors);
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await?;
