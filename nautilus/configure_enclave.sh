@@ -55,7 +55,7 @@ REGION="${REGION:-us-east-1}"
 export AWS_DEFAULT_REGION="$REGION"
 
 # The default AMI for us-east-1. Change this if your region is different.
-AMI_ID="${AMI_ID:-ami-085ad6ae776d8f09c}"
+AMI_ID="ami-0c02fb55956c7d316"
 
 # Environment variable name for our secret; default is 'API_KEY'
 API_ENV_VAR_NAME="${API_ENV_VAR_NAME:-API_KEY}"
