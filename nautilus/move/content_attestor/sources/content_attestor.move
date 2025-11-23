@@ -55,7 +55,7 @@ public fun update_proof<T>(
     assert!(ok, EInvalidSignature);
 
     ProofNFT {
-        id: object::new(ctx),
+        id: object::new(ctx),           
         content_hash,
         model,
         prompt,
