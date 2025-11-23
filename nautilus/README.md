@@ -85,6 +85,27 @@ npm run dev
 
 App runs at **http://localhost:5173**
 
+### Important: Chrome CORS Configuration
+
+Since the app connects to an external enclave API, you need to run Chrome with CORS disabled for development:
+
+**Windows:**
+```bash
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+```
+
+**macOS:**
+```bash
+open -na Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+```
+
+**Linux:**
+```bash
+google-chrome --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+```
+
+**Note:** This opens an isolated Chrome instance specifically for testing. Your regular Chrome browser remains secure and unaffected.
+
 ### Build for Production
 ```bash
 npm run build
