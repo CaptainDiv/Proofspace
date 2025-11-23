@@ -320,6 +320,22 @@ function App() {
         </div>
       </header>
 
+      {/* Demo Notice Banner */}
+      <div className="max-w-7xl mx-auto px-4 py-3 mb-4">
+        <div className="bg-yellow-900/40 border border-yellow-500/50 rounded-lg p-4">
+          <div className="flex items-center gap-3">
+            <span className="text-yellow-400 text-2xl">⚠️</span>
+            <div>
+              <h3 className="font-semibold text-yellow-300">Demo Environment Notice</h3>
+              <p className="text-sm text-yellow-100 mt-1">
+                The AWS Nitro Enclave requires Chrome with CORS disabled for cross-origin requests. 
+                <strong> For full functionality, please see our video demo or follow the local setup instructions in the README.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
         {activeTab === 'home' ? (
