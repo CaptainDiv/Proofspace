@@ -2,7 +2,7 @@
 
 **A decentralized content attestation platform powered by AWS Nitro Enclaves and Sui blockchain**
 
-Built for [Walrus Haulout Hackathon] 2025
+Built for Walrus Haulout Hackathon 2025
 
 ---
 
