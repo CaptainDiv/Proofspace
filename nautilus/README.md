@@ -147,6 +147,8 @@ Click "Connect Wallet" and approve connection in your Sui wallet
 - Module: `content_attestor`
 - Network: Sui Testnet
 
+**Live Demonstration:**
+  https://proofspacee-oyop38b6y-divineosaigbovo1-5376s-projects.vercel.app
 ---
 
 ## Hackathon Challenges Addressed
