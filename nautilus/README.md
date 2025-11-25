@@ -73,8 +73,8 @@ Content creators can prove original authorship. Legal professionals can establis
 
 Clone and install dependencies:
 ```bash
-git clone https://github.com/yourusername/proofspace.git
-cd proofspace
+git clone https://github.com/CaptainDiv/Proofspace.git
+cd nautilus
 npm install
 ```
 
@@ -189,6 +189,9 @@ Click "Connect Wallet" and approve connection in your Sui wallet
 
 ```
 proofspace/
+├── move/
+|   ├── content_attestor
+|   ├── enclave
 ├── src/
 │   ├── App.tsx           # Main component
 │   ├── main.tsx          # Entry point
