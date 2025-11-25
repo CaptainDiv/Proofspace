@@ -74,7 +74,7 @@ Content creators can prove original authorship. Legal professionals can establis
 Clone and install dependencies:
 ```bash
 git clone https://github.com/CaptainDiv/Proofspace.git
-cd nautilus
+cd nautilus\frontend-final
 npm install
 ```
 
@@ -87,6 +87,8 @@ App runs at **http://localhost:5173**
 
 ### Important: Chrome CORS Configuration
 
+close all chrome windows first
+
 Since the app connects to an external enclave API, you need to run Chrome with CORS disabled for development:
 
 **Windows:**
@@ -96,12 +98,12 @@ chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
 
 **macOS:**
 ```bash
-open -na Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+open -na "Google Chrome" --args --disable-web-security --user-data-dir="/tmp/chrome-dev" http://localhost:5173
 ```
 
 **Linux:**
 ```bash
-google-chrome --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+google-chrome --disable-web-security --user-data-dir="/tmp/chrome-dev" http://localhost:5173
 ```
 
 **Note:** This opens an isolated Chrome instance specifically for testing. Your regular Chrome browser remains secure and unaffected.
