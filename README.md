@@ -2,7 +2,7 @@
 
 **A decentralized content attestation platform powered by AWS Nitro Enclaves and Sui blockchain**
 
-Built for [Walrus Haulout Hackathon] 2025
+Built for Walrus Haulout Hackathon 2025
 
 ---
 
@@ -73,8 +73,8 @@ Content creators can prove original authorship. Legal professionals can establis
 
 Clone and install dependencies:
 ```bash
-git clone https://github.com/yourusername/proofspace.git
-cd proofspace
+git clone https://github.com/CaptainDiv/Proofspace.git
+cd nautilus
 npm install
 ```
 
@@ -147,6 +147,8 @@ Click "Connect Wallet" and approve connection in your Sui wallet
 - Module: `content_attestor`
 - Network: Sui Testnet
 
+**Live Demonstration:**
+  https://proofspacee-oyop38b6y-divineosaigbovo1-5376s-projects.vercel.app
 ---
 
 ## Hackathon Challenges Addressed
@@ -187,6 +189,9 @@ Click "Connect Wallet" and approve connection in your Sui wallet
 
 ```
 proofspace/
+├── move/
+|   ├── content_attestor
+|   ├── enclave
 ├── src/
 │   ├── App.tsx           # Main component
 │   ├── main.tsx          # Entry point
